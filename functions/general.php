@@ -130,7 +130,7 @@ function getAllUsers($userType) {
 
     $userType = $conn->real_escape_string($userType);
 
-    $query = "SELECT nome, email, criado_em 
+    $query = "SELECT id, nome, email, criado_em 
               FROM users
               WHERE is_admin = '$userType'";
     

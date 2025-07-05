@@ -71,6 +71,7 @@ $getAllUsers = getAllUsers($userType);
                     <table class="min-w-full bg-white rounded shadow">
                         <thead>
                             <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                                <th class="py-3 px-6 text-left">ID</th>
                                 <th class="py-3 px-6 text-left">Name</th>
                                 <th class="py-3 px-6 text-left">Email</th>
                                 <th class="py-3 px-6 text-center">Criado em</th>
@@ -79,6 +80,7 @@ $getAllUsers = getAllUsers($userType);
                         <tbody class="text-gray-700 text-sm">
                             <?php foreach ($getAllUsers as $user): ?>
                                 <tr class="border-b border-gray-200 hover:bg-gray-100">
+                                    <td class="py-3 px-6 text-left"><?php echo htmlspecialchars($user['id']); ?></td>
                                     <td class="py-3 px-6 text-left"><?php echo htmlspecialchars($user['nome']); ?></td>
                                     <td class="py-3 px-6 text-left"><?php echo htmlspecialchars($user['email']); ?></td>
                                     <td class="py-3 px-6 text-center"><?php echo htmlspecialchars($user['criado_em']); ?></td>

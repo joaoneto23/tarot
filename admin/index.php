@@ -27,7 +27,7 @@ $total_clientes = getNumberClients()
         <!-- Main Content -->
         <main class="flex-1 p-6">
             <header class="mb-6">
-                <h1 class="text-2xl font-bold text-gray-800">Welcome Back!</h1>
+                <h1 class="text-2xl font-bold text-gray-800">Olá, <?php echo $_SESSION['nome']; ?>!</h1>
             </header>
 
             <!-- Cards Section -->
@@ -48,7 +48,7 @@ $total_clientes = getNumberClients()
 
             <!-- Table Section -->
             <section class="mt-6">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">Recent Activity</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Marcações Recentes</h2>
                 <div class="overflow-x-auto">
                     <table class="min-w-full bg-white rounded shadow">
                         <thead>
