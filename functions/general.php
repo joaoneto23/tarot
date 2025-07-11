@@ -49,7 +49,7 @@ function login($email, $password) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['nome'] = $user['nome'];
         $_SESSION['is_admin'] = $user['is_admin'] ?? 0; 
-        header('Location: index.php');
+        header('Location: index');
         exit;
     } else {
         echo "Login Invalido";
@@ -94,7 +94,7 @@ function emailAlreadyExists($email) {
 
 function logout() {
     session_destroy();
-    header('Location: index.php');
+    header('Location: index');
     exit;
 }
 

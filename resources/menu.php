@@ -14,8 +14,8 @@ session_start();
             <h1 class="text-2xl font-bold tracking-wider">🔮 CrisAngels</h1>
             <nav>
                 <a href="/" class="px-3 hover:underline">Início</a>
-                <a href="login.php" class="px-3 hover:underline">Login</a>
-                <a href="marcacao.php" class="px-3 hover:underline">Marcar Consulta</a>
+                <a href="login" class="px-3 hover:underline">Login</a>
+                <a href="marcacao" class="px-3 hover:underline">Marcar Consulta</a>
                 <?php if (isset($_SESSION['is_admin']) == 1) { ?>
                     <a href="/tarot/admin/" class="px-3 hover:underline">ADEYÉMI</a>
                 <?php } else {

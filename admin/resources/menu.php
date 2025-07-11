@@ -3,7 +3,7 @@ require_once ('../functions/general.php');
 require_once ('resources/modal.php');
 
 if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
-    header("Location: ../index.php");
+    header("Location: ../index");
     exit;
 }
 
@@ -22,13 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <nav class="flex-1 p-4">
                 <ul>
                     <li class="mb-2">
-                        <a href="index.php" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-home'></i> Home</a>
+                        <a href="index" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-home'></i> Home</a>
                     </li>
                     <li class="mb-2">
-                        <a href="users.php" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-user'></i> Utilizadores</a>
+                        <a href="users" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-user'></i> Utilizadores</a>
                     </li>
                     <li class="mb-2">
-                        <a href="marcacoes.php" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-book-bookmark' ></i> Marcações</a>
+                        <a href="marcacoes" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-book-bookmark' ></i> Marcações</a>
                     </li>
                     <!-- <li class="mb-2">
                         <a href="" class="block p-2 rounded hover:bg-gray-700"><i class='bx bx-cog' ></i> Settings</a>
